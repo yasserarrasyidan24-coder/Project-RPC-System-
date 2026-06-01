@@ -213,14 +213,31 @@ Dashboard menampilkan data rekapitulasi secara real-time:
 3. Dashboard menampilkan total peserta dan status racepack secara real-time.
 
 # SECTION 7 - Out of Scope
+(sistem pendaftaran dan pengambilan racepack, bukan sistem pelacakan atau hasil lomba)
 Fitur berikut belum termasuk dalam versi pertama sistem:
-1. Live race tracking GPS
-2. Online leaderboard hasil lomba
-3. Integrasi payment gateway otomatis
-4. QR code check-in
-5. Multi-event management
-6. Mobile application
-7. Email dan WhatsApp notification automation
+1. Integrasi Payment Gateway Otomatis
+Verifikasi pembayaran masih dilakukan secara manual oleh admin (upload bukti transfer), bukan otomatis melalui gateway pembayaran seperti Midtrans, Xendit, atau Stripe.
+
+2. Notifikasi Otomatis (Email & WhatsApp)
+Sistem belum mengirimkan email atau pesan WhatsApp otomatis setelah registrasi, pembayaran berhasil, atau pengingat pengambilan racepack.
+
+3. Sistem Manajemen Multi-Event
+Website hanya mendukung satu event lari dalam satu waktu. Untuk menyelenggarakan event baru, perlu dilakukan instalasi ulang atau modifikasi data manual pada database.
+
+4. Aplikasi Mobile (Android/iOS)
+Sistem hanya tersedia dalam bentuk website responsif (desktop/mobile browser), bukan aplikasi native.
+
+5. QR Code Check-in
+Proses verifikasi pengambilan racepack hanya menggunakan input kode registrasi manual, bukan scan QR code.
+
+6. Live Race Tracking (GPS)
+Tidak ada fitur pelacakan posisi peserta secara real-time saat lomba berlangsung.
+
+7. Leaderboard & Hasil Lomba Online
+Sistem tidak menampilkan papan peringkat atau waktu finis peserta secara online setelah event selesai.
+
+8. Export Data Peserta dalam Format Lanjutan
+Belum tersedia fitur export data ke Excel/CSV dengan filter dinamis (hanya tersedia tampilan rekap di dashboard).
 
 ## SECTION 8 — Non-functional Requirements
 ### Non-functional Requirements
